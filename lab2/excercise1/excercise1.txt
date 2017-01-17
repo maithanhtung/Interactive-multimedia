@@ -1,0 +1,4 @@
+1. 
++	Rwd:  A single codebase can support users with differently sized viewports. Before RWD, they made different sites for different devices.
++	A media query allows us to target not only certain device classes, but to actually inspect the physical characteristics of the device rendering our work.
++	We set all the place need to be sized in ems, so in different size of screen, we only need to change the only one place in Px.
