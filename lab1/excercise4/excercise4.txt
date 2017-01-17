@@ -1,0 +1,3 @@
+I used ctrl + shift + j
+or Right click -> Inspect
+or click on the menu of google chrome (small on the rigth top conner) -> More tools -> Developer tools.

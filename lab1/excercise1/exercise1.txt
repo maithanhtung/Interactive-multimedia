@@ -1,0 +1,6 @@
+﻿* HTML : use for creating basic web, make the way of showing information has more structure.
+* CSS : Designing Html element.
+* Javascript : Provide interactivity for the web page.
+* HTTP : a protocol for for distributed, collaborative, hypermedia information systems
+* HTML5 : Latest version of HTML
+* DHTML : Web that has interactivity, able change the look or content.

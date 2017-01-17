@@ -1,0 +1,4 @@
+﻿Coding convention :
+* What is : Standard for styling code, so it can be nice and clearly.
+* Why important : Helps other developers or contributors easily understand the code and more easy for maintenance 
+* Kind of CC will use : I will use Html,css and javascript coding convention
