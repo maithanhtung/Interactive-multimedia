@@ -1,0 +1,39 @@
+h1 { background-color: #c2c2a3;
+	 padding: 10px;
+	 margin-top: 1px;  }
+p.p1 { font-size: 120% }
+p { width: 100%;
+	text-align: justify; }
+body { margin: 0;
+	   background-color: #f2f2f2; }
+div.div1 {	position: left;
+			font-size: 170%;}
+div.div2 { margin-left: 160px;
+		   padding: 0px 16px 0px 16px;
+		   height: 1000px;}
+li a { display: block;
+       color: #000;
+       padding: 8px 16px;
+       text-decoration: none;}
+li a:hover { background-color: #c2c2a3;
+        	 color: white;}
+ul { padding: 0;
+	 width: 160px;
+	 height: 100%;
+	 overflow: hidden;
+	 padding: 0;
+	 margin: 0;
+	 float: left; }
+@media screen and (max-width: 500px) 
+{ ul, li, a { text-align: center;
+			  float: none;
+			  width: 99%;} 
+  div.div2 {width: 99%;
+   			margin: 0;
+   			padding: 2px 1px 2px 1px;}
+}
+img { width: 80%;
+	  display: block;
+	  margin: auto;
+	  border: 1px solid #ddd;
+	  border-radius: 4px; }
