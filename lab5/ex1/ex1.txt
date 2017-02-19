@@ -1,0 +1,29 @@
+1,
+WHat JQuery can do is :
+	+ 	Simplifies the Javascript programming
+	+	Do some effects like : Hide,show,fade,slide
+	+	Do changing and manipulating HTML elements and attributes like: Get,Set,
+	+	Do traversing
+	+	Got AJAX, for exchanging data with a server and updating parts of a web page without reloading the whole page
+
+
+2,
+How can it help :
+	+	Easy on learning
+	+ 	Write less, do more
+	+	Much easier to use JS on website
+	+	Simplifies alot of complicated things from JS
+
+3,
+On participant list app, JQuery can : Update the view after adding a new name
+
+4,
+CDN :
+	+	Content delivery network or content distribution network.
+	+	Globally distributed network of proxy servers deployed in multiple data centers.
+
+Benefits: 
+	+	Reducing bandwidth costs
+	+	Improving page load times
+	+	Increasing global availability
+	

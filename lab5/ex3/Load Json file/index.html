@@ -1,0 +1,43 @@
+<html>
+    <head>
+       
+    </head>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>
+        function doStuff(){
+                $.ajax({
+                dataType: "jsonp",
+                url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp"
+                 });
+                    }
+
+                function jsonCallback(json)
+                {
+                 console.log(json);
+                }
+            // $(document).ready(function(){
+            // 	console.log('dm');
+                
+            //          var flickerAPI = "https://imp-portfolio-demonstration.herokuapp.com/json/persons.json?jsoncallback=?";
+            //             $.getJSON( flickerAPI, {
+            //             format: "jsonp"
+            //             })
+            //         .done(function(dataWeGotViaJsonp){
+            //         	console.log(dataWeGotViaJsonp);
+            //         	console.log('test');
+            //             var text = '';
+            //             var len = dataWeGotViaJsonp.length;
+            //             for(var i=0;i<len;i++){
+            //                 data = dataWeGotViaJsonp[i];
+            //                 console.log(data);
+            //                 text += '<p>' + data.age + '</p>'
+            //             }
+            //             $('#result').html(text);
+            //         })
+            //     });
+        </script>
+    <body>
+    <h1 onclick="doStuff();">Press me</h1>
+        <div id = 'result'></div>
+    </body>
+</html>
