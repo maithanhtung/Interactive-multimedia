@@ -4,35 +4,11 @@
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script type="text/javascript" src="js.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css">
-
-#gallery {
-    padding: 0 20px;
-    position: relative;
-}
-#gallery img { 
-    position: relative; 
-    background: #fff;
-    width: 300px;
-    height: 300px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-input {
-  text-align: center;
-}
-
-#gallery:before { 
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    right: 0;
-}
-</style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 <br>
@@ -46,24 +22,4 @@ input {
     
 </div>
 </body>
- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script type="text/javascript">
-	function myfunction() {
-  var tags = document.getElementById("tags").value;
-  console.log(tags);
-  var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-  $.getJSON( flickerAPI, {
-    tags: tags,
-    tagmode: "any",
-    format: "json"
-  })
-    .done(function( data ) {
-      $.each( data.items, function( i, item ) {
-        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#gallery" );
-        if ( i === 7 ) {
-          return false;
-        }
-      });
-    });
-};
-</script>
+ 
