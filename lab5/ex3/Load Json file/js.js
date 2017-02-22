@@ -1,20 +1,19 @@
-function fetchJSONFile(path, callback) {
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.onreadystatechange = function() {
-        if (httpRequest.readyState === 4) {
-            if (httpRequest.status === 200) {
-                var data = JSON.parse(httpRequest.responseText);
-                if (callback) callback(data);
-            }
-        }
-    };
-    httpRequest.open('GET', path);
-    httpRequest.send(); 
-}
+function doStuff(){
+    $.ajax({
+    dataType: "jsonp",
+    url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp"
+                 });
+                    }
 
-// this requests the file and executes a callback with the parsed result once
-//   it is available
-fetchJSONFile('persons.jsonp', function(data){
-    // do something with your data
-    console.log(data);
-});
+function jsonCallback(json)
+{
+    console.log(json);
+    var text = '';
+    var len = json.length;
+    for(var i=0;i<len;i++){
+        data = json[i];
+        console.log(data);
+        text += '<p>' + data.name + ' email: ' + data.email +'</p>';
+    }
+    $('#result').html(text);
+}

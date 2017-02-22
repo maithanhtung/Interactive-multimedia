@@ -2,8 +2,9 @@
     <head>
        
     </head>
-     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+        <!-- <script>
         function doStuff(){
                 $.ajax({
                 dataType: "jsonp",
@@ -14,30 +15,21 @@
                 function jsonCallback(json)
                 {
                  console.log(json);
+                  var text = '';
+                        var len = json.length;
+                        for(var i=0;i<len;i++){
+                            data = json[i];
+                            console.log(data);
+                            text += '<p>' + data.name + ' email: ' + data.email +'</p>';
+                        }
+                        $('#result').html(text);
                 }
-            // $(document).ready(function(){
-            // 	console.log('dm');
-                
-            //          var flickerAPI = "https://imp-portfolio-demonstration.herokuapp.com/json/persons.json?jsoncallback=?";
-            //             $.getJSON( flickerAPI, {
-            //             format: "jsonp"
-            //             })
-            //         .done(function(dataWeGotViaJsonp){
-            //         	console.log(dataWeGotViaJsonp);
-            //         	console.log('test');
-            //             var text = '';
-            //             var len = dataWeGotViaJsonp.length;
-            //             for(var i=0;i<len;i++){
-            //                 data = dataWeGotViaJsonp[i];
-            //                 console.log(data);
-            //                 text += '<p>' + data.age + '</p>'
-            //             }
-            //             $('#result').html(text);
-            //         })
-            //     });
-        </script>
+                </script> -->
+        
     <body>
-    <h1 onclick="doStuff();">Press me</h1>
-        <div id = 'result'></div>
+    <h1>Person List :</h1>
+    <div id = 'result'></div>
+    <button onclick="doStuff();">Load with AJAX</button>
+        
     </body>
 </html>
